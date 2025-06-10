@@ -1,12 +1,12 @@
 import requests
 import pandas as pd
+from api_key import api_key
 
-api_key = "7LCHI3HCN0601PY9"
-
+key = api_key
 symbol = 'MGLU3.SA'  # Símbolo para Magazine Luiza na B3 com Alpha Vantage
 
 # URL para pegar dados diários
-url = f'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol={symbol}&outputsize=compact&apikey={api_key}'
+url = f'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol={symbol}&outputsize=compact&apikey={key}'
 
 # Requisição
 response = requests.get(url)
