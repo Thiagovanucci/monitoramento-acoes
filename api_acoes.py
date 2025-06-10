@@ -28,6 +28,6 @@ if 'Time Series (Daily)' in data:
     print(df.tail())
 else:
     print("Erro ao buscar dados:", data.get("Error Message", data))
-    ###
+    ##############
 
 
